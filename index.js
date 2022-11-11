@@ -174,8 +174,9 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-let filteredArray = [];
+
 function filterByWord(array, string){
+  let filteredArray = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i].includes(string)) {
       filteredArray.push(array[i]);
