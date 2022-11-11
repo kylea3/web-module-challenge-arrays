@@ -47,7 +47,7 @@ Use the copy function below to do the following:
 
 
 function copy(array){
-  arrayCopy = [...array];
+  let arrayCopy = [...array];
   return arrayCopy
 }
 
