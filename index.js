@@ -179,7 +179,7 @@ function filterByWord(array, string){
   for (let i = 0; i < array.length; i++) {
     if (array[i].includes(string)) {
       filteredArray.push(array[i]);
-
+      return filteredArray;
     }
   }
 }
