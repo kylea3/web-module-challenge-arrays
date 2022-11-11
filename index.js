@@ -127,10 +127,11 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(array, index){
+  return array[index];
 }
 
+console.log(getFlavorByIndex(originalFlavors,2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -147,9 +148,11 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(array, string){
+  array.splice(array.indexOf(string),1);
+  return array
 }
+console.log(removeFlavorByName(originalFlavors, "Rocky Road"));
 
 
 
@@ -171,12 +174,18 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
+let filteredArray = [];
+function filterByWord(array, string){
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].includes(string)) {
+      filteredArray.push(array[i]);
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+    }
+  }
 }
 
-
+filterByWord(originalFlavors,'Chocolate');
+console.log(filteredArray);
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
